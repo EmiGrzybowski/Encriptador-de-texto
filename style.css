@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4fc;
+}
+
+/* Estilos para el header */
+header {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+header .logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para las secciones */
+.seccion1 {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-left: 40px;
+    border: 1px solid #f4f4fc;
+    background-color: #f4f4fc;
+}
+.cajatexto {
+    background-color: #f4f4fc;
+    border: none;
+    color: #0a3871;
+}
+
+.seccion2 {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 32px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    box-shadow: 0px 34px 32px -8px rgba(0, 0, 0,50) ; 
+}
+
+/* Estilos para la caja de texto */
+textarea.cajatexto {
+    width: 100%;
+    height: 120px;
+    padding: 20px;
+    font-size: 16px;
+    border: 0.02px solid #0a3871;
+    border-radius: 32px;
+    resize: none;
+    margin-top: 40px;
+}
+
+/* Estilos para la alerta */
+.alerta {
+    display: flex;
+    align-items: center;
+    margin-top: 190px;
+    font-size: 14px;
+    color: #495057;
+}
+
+.alerta img {
+    margin-right: 10px;
+}
+
+/* Estilos para los botones */
+.contenedor-botones {
+    display: flex;
+}
+.contenedor-copiar input[type="button"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #fff;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+    font-size: 16px;
+}
+.btn-encriptar { 
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background-color: #0a3871;
+    color: white;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 24px;
+
+}
+.btn-desencriptar { 
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #d8dfe8;
+    color: #0a3871;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 24px;
+
+}
+.btn-copiar { 
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ffff;
+    color: #fff;
+    border: 1px solid #0a3871;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 24px;
+}
+
+.contenedor-botones input[type="button"]:hover,
+.contenedor-copiar input[type="button"]:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0,0.5);
+}
+
+/* Estilos para la segunda sección */
+.contenedor-muñeco img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.contenedor-parrafo {
+    text-align: center;
+    color: #495057;
+}
+
+.contenedor-parrafo h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0a3871;
+}
+
+.contenedor-resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.texto-resultado {
+    color: #24c243;
+}
+
+/* Media Queries para tablets */
+@media (min-width: 768px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .seccion1, .seccion2 {
+        width: 48%;
+        margin-bottom: 0;
+    }
+
+    .contenedor-muñeco img {
+        max-width: 80%;
+    }
+}
+
+/* Media Queries para ordenadores */
+@media (min-width: 1024px) {
+    body {
+        padding: 40px;
+    }
+
+    .seccion1, .seccion2 {
+        max-width: 700px;
+    }
+
+    textarea.cajatexto {
+        height: 150px;
+    }
+
+    .contenedor-muñeco img {
+        max-width: 70%;
+    }
+}
+.ocultar {
+    display: none;
+}
+footer {
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 140px;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+}
